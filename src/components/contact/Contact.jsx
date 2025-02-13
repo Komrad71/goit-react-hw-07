@@ -10,11 +10,11 @@ const Contact = ({ contact: { id, name, number } }) => {
     <div className={css.contact}>
       <div className={css.contactContainer}>
         <div className={css.contactWrapper}>
-          <FaPhoneAlt color="#007bhf" />
+          <FaPhoneAlt color="black" />
           <p className={css.contactText}>{name}</p>
         </div>
         <div className={css.contactWrapper}>
-          <FaUserAlt color="#007bhf" />
+          <FaUserAlt color="blue" />
           <p className={css.contactText}>{number}</p>
         </div>
       </div>

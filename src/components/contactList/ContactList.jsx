@@ -6,8 +6,8 @@ import css from "./ContactList.module.css";
 const ContactList = () => {
   const filteredContacts = useSelector(selectFilteredContacts);
 
-  if (!Array.isArray(filteredContacts)) {
-    return <p>No contacts found or data is invalid.</p>;
+  if (!Array.isArray(filteredContacts) || filteredContacts.length === 0) {
+    return <p>No contacts found.</p>;
   }
 
   return (
